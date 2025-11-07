@@ -577,7 +577,7 @@
     }
     .main__h-desc {
         justify-content: center;
-    }f
+    }
     .main__h-desc span {
         padding: 30px 0 0 0;
     }
@@ -638,9 +638,6 @@
     body {
         padding-inline: 10px;
     }
-    .main__item__h-box::after {
-        top: 20em;
-    }
     .main__item__box__img-block-f, .main__item__box__img-block-s, .main__item__box__img-block-t, .main__item__box__img-block-fo, .main__item__box__img-block-fi, .main__item__box__img-block-si {
         padding: 8px;
     }
@@ -674,6 +671,14 @@
     }
     .main__item-desc {
         margin-top: 0;
+    }
+}
+@media (max-width: 390px) {
+    .main__item__h-box::after {
+        top: 23em;
+        padding: 5px 10px;
+        font-size: 13px;
+        transform: translateY(0);
     }
 }
 </style>
