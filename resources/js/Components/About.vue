@@ -10,7 +10,7 @@
                 <div class="about-block">
                     <div class="about__item-box">
                         <img src="/assets/block.svg" alt="Image">
-                        <p>Аппаратные<br>кошельки</p>
+                        <p>Аппаратные <br>кошельки</p>
                     </div>
                     <a href="#" class="send">
                         <img src="/assets/Arrow%202%20(Stroke).svg" alt="Image">
@@ -199,5 +199,65 @@ h2 {
     backdrop-filter: blur(38.31px);
     -webkit-backdrop-filter: blur(38.31px);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 1300px) {
+    .about {
+        margin: 30px 0 40px;
+    }
+    h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+    .about__item:nth-child(1),
+    .about__item:nth-child(2),
+    .about__item:nth-child(3) {
+        width: 100%;
+    }
+    .about__item:nth-child(1) .about-block:nth-child(1),
+    .about__item:nth-child(1) .about-block:nth-child(2),
+    .about__item:nth-child(3) .about-block:nth-child(1),
+    .about__item:nth-child(3) .about-block:nth-child(2),
+    .about__sec-block{
+        min-height: unset;
+        background-image: unset;
+        background-color: #E9EDF3;
+    }
+    .about__item-box-desc {
+        margin: 0;
+    }
+    .about-bg {
+        padding-block: 10vh
+    }
+    .about-bg h3 {
+        font-size: 25px;
+        padding: 25px 40px;
+    }
+}
+@media (max-width: 500px) {
+    h2 {
+        font-size: 20px;
+    }
+    .about__row {
+        margin-top: 20px;
+    }
+    .about__item-box img {
+        padding: 9px 12px;
+    }
+    .about__item-box p {
+        font-size: 18px;
+    }
+    .about__item-box p br {
+        display: none;
+    }
+    .about__item-box-desc {
+        font-size: 12px;
+    }
+    .about__item-box-desc br {
+        display: none;
+    }
+    .about-bg h3 {
+        font-size: 16px;
+        padding: 20px 30px;
+    }
 }
 </style>
