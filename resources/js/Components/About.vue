@@ -77,14 +77,14 @@
 
 <style>
 .about {
-    padding: 60px 20px;
+    margin: 160px 0 40px;
 }
 h2 {
-    font-size: 51px;
+    font-size: 31px;
     color: #272B37;
 }
 .about__row {
-    margin-top: 60px;
+    margin-top: 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -98,11 +98,50 @@ h2 {
 .about__item:nth-child(3) {
     width: 24.5%;
 }
-.about-block {
+.about__item:nth-child(1) .about-block:nth-child(1) {
     width: 100%;
-    height: 60vh;
-    background-color: #E9EDF3;
-    padding: 30px;
+    min-height: 58vh;
+    background-image: url(/assets/abF.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 25px;
+    margin-top: 10px;
+    position: relative;
+    border-radius: 20px;
+}
+.about__item:nth-child(1) .about-block:nth-child(2) {
+    width: 100%;
+    min-height: 58vh;
+    background-image: url(/assets/abT.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 25px;
+    margin-top: 10px;
+    position: relative;
+    border-radius: 20px;
+}
+.about__item:nth-child(3) .about-block:nth-child(1) {
+    width: 100%;
+    min-height: 58vh;
+    background-image: url(/assets/abTh.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 25px;
+    margin-top: 10px;
+    position: relative;
+    border-radius: 20px;
+}
+.about__item:nth-child(3) .about-block:nth-child(2) {
+    width: 100%;
+    min-height: 58vh;
+    background-image: url(/assets/abFo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 25px;
     margin-top: 10px;
     position: relative;
     border-radius: 20px;
@@ -112,7 +151,6 @@ h2 {
     flex-wrap: wrap;
     align-items: center;
     gap: 20px;
-    margin-bottom: 80px;
 }
 .about__item-box img {
     background-color: #fff;
@@ -120,22 +158,25 @@ h2 {
     padding: 12px 15px;
 }
 .about__item-box p {
-    font-size: 30px;
+    font-size: 22px;
     color: #272B37;
     line-height: 26px;
 }
 .about__sec-block {
-    background-color: #E9EDF3;
+    background-image: url(/assets/abFi.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     padding: 30px;
     margin-top: 10px;
     position: relative;
     border-radius: 20px;
 }
 .about__item-box-desc {
-    font-size: 18px;
+    font-size: 16px;
     color: #272B37;
     line-height: 20px;
-    margin: 16px 0 0 75px;
+    margin: 20px 0 0 75px;
 }
 .about-bg {
     background-image: url(/assets/Rectangle 2340 1.png);
@@ -143,15 +184,15 @@ h2 {
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 30px;
-    padding: 211px 0;
     display: flex;
     justify-content: center;
     margin-top: 10px;
+    padding-block: 24vh;
 }
-h3 {
+.about-bg h3 {
     position: relative;
-    font-size: 51px;
-    padding: 50px;
+    font-size: 35px;
+    padding: 35px 50px;
     color: #fff;
     border-radius: 30px;
     background: rgba(255, 255, 255, 0.15);
@@ -159,5 +200,4 @@ h3 {
     -webkit-backdrop-filter: blur(38.31px);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
-
 </style>

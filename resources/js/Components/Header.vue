@@ -1,5 +1,20 @@
 <script setup>
+import { ref } from 'vue'
 
+const activeIndex = ref(0)
+
+const menuItems = [
+    'Главная',
+    'Каталог',
+    'Бренды',
+    'Доставка и оплата',
+    'Помощь',
+    'Компания'
+]
+
+const setActive = (index) => {
+    activeIndex.value = index
+}
 </script>
 
 <template>
@@ -12,23 +27,13 @@
         <div class="header__item">
             <nav>
                 <ul>
-                    <li class="nav__first-child">
-                        <a href="#">Главная</a>
-                    </li>
-                    <li>
-                        <a href="#">Каталог</a>
-                    </li>
-                    <li>
-                        <a href="#">Бренды</a>
-                    </li>
-                    <li>
-                        <a href="#">Доставка и оплата</a>
-                    </li>
-                    <li>
-                        <a href="#">Помощь</a>
-                    </li>
-                    <li>
-                        <a href="#">Компания</a>
+                    <li
+                        v-for="(item, index) in menuItems"
+                        :key="index"
+                        :class="{'nav__first-child': activeIndex === index}"
+                        @click="setActive(index)"
+                    >
+                        <a href="#">{{ item }}</a>
                     </li>
                 </ul>
             </nav>
@@ -67,14 +72,15 @@ nav ul {
 }
 
 .header__logo {
-    width: 100%;
+    max-width: 100%;
+    width: 230px;
 }
 
 nav ul {
     background-color: #E9EDF3;
-    padding: 16px 30px 16px 16px;
+    padding: 12px 20px 12px 20px;
     border-radius: 50px;
-    gap: 30px;
+    gap: 25px;
 }
 
 .nav__first-child {
@@ -84,12 +90,12 @@ nav ul {
 }
 
 .nav__first-child a {
-    font-size: 18px;
+    font-size: 16px;
     color: #fff;
 }
 
 nav ul li a {
-    font-size: 18px;
+    font-size: 16px;
     color: #272B37;
 }
 
@@ -108,6 +114,11 @@ nav ul li {
 .header__item:last-child a {
     background-color: #17BE79;
     border-radius: 50%;
-    padding: 14px;
+    padding: 12px;
+}
+
+.header__icon {
+    max-width: 100%;
+    width: 16px;
 }
 </style>
