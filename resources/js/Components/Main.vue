@@ -355,6 +355,7 @@
     font-size: 14px;
     color: #272B37;
     line-height: 18px;
+    text-align: center;
 }
 
 .main__second__block__box-price {
@@ -654,7 +655,7 @@
         width: 100%;
     }
     .main__second__block-box {
-        padding: 10px 0;
+        padding: 10px;
     }
     .main__second__block__box-box {
         flex-direction: column;
@@ -675,7 +676,7 @@
 }
 @media (max-width: 390px) {
     .main__item__h-box::after {
-        top: 23em;
+        top: 13em;
         padding: 5px 10px;
         font-size: 13px;
         transform: translateY(0);
